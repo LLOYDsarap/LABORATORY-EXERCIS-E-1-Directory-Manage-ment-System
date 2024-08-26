@@ -7,4 +7,20 @@ void listDirectoryContents() {
     cout << "Files:\nalpha.txt\nbeta.cpp\nsummary.docx\nimage.jpg\n";
     cin.ignore(); // Wait for user input
 }
+void createFolder() {
+    cout << "Enter folder name: ";
+    string folderName;
+    cin >> folderName;
+    cout << "Created: " << folderName << "\n";
+    cin.ignore(); // Wait for user input
+}
+
+void changeFolder() {
+    cout << "Enter folder name: ";
+    string folderName;
+    cin >> folderName;
+    cout << "Navigated to: " << folderName << "\n";
+    cin.ignore(); // Wait for user input
+}
+
 
