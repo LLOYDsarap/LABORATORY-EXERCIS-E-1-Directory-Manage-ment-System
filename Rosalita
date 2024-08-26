@@ -23,4 +23,24 @@ void changeFolder() {
     cin.ignore(); // Wait for user input
 }
 
+int main() {
+    int selection;
+    bool running = true;
+
+    while (running) {
+        cout << "1. List Files\n2. Create Folder\n3. Change Folder\n4. Exit\nChoose: ";
+        cin >> selection;
+
+        switch (selection) {
+            case 1: listDirectoryContents(); break;
+            case 2: createFolder(); break;
+            case 3: changeFolder(); break;
+            case 4: running = false; break;
+            default: cout << "Invalid choice!\n";
+        }
+    }
+
+    cout << "Goodbye!\n";
+    return 0;
+}
 
